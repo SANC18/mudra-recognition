@@ -1,0 +1,25 @@
+# Raw video is large and not meant to be versioned — only structured landmark
+# data (data/landmarks/) is tracked.
+data/raw_videos/*
+!data/raw_videos/.gitkeep
+*.mp4
+*.mov
+*.avi
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Trained model artifacts (regenerable from data/landmarks/)
+*.joblib
+*.pt
+*.pth
+
+# OS
+.DS_Store
